@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Information from "./components/Information";
+import Socials from "./components/Socials";
 
 function App() {
   return (
