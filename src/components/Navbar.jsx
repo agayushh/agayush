@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <div>
       <div className="flex justify-center gap-x-20 h-16 items-center bg-black">
-        <div className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-inherit-purple-400 via-green-300 to-orange-400 flex gap-x-24">
+        <div className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-400 flex gap-x-24">
           {navBarItems.map((item, index) => {
             return (
               <div
