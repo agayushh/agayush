@@ -6,23 +6,48 @@ import { FaGithub } from "react-icons/fa6";
 import { FaHashnode } from "react-icons/fa6";
 
 export default function Socials() {
+  const socialLinks = [
+    {
+      icon: <BsTwitterX />,
+      url: "https://x.com/agayushh",
+      label: "Twitter Profile",
+    },
+    {
+      icon: <FaDiscord />,
+      url: "",
+      label: "Discord Profile",
+    },
+    {
+      icon: <FaLinkedinIn />,
+      url: "https://www.linkedin.com/in/-ayushgoyal/",
+      label: "LinkedIn Profile",
+    },
+    {
+      icon: <FaGithub />,
+      url: "https://github.com/agayushh",
+      label: "GitHub Profile",
+    },
+    {
+      icon: <FaHashnode />,
+      url: "https://hashnode.com/@ayushgoyal28",
+      label: "Hashnode Blog",
+    },
+  ];
+
   return (
-    <div className="mt-4 ml-2 text-xl flex justify-evenly">
-      <a href="https://x.com/agayushh" target="_blank">
-        <BsTwitterX className="cursor-pointer" />
-      </a>
-      <a href="https://x.com/agayushh" target="_blank">
-        <FaDiscord className="cursor-pointer hover:scale-90 duration-200 transition" />
-      </a>
-      <a href="https://www.linkedin.com/in/-ayushgoyal/" target="_blank">
-        <FaLinkedinIn className="cursor-pointer hover:scale-90 duration-200 transition" />
-      </a>
-      <a href="https://github.com/agayushh" target="_blank">
-        <FaGithub className="cursor-pointer hover:scale-90 duration-200 transition" />
-      </a>
-      <a href="https://hashnode.com/@ayushgoyal28" target="_blank">
-        <FaHashnode className="cursor-pointer hover:scale-90 duration-200 transition" />
-      </a>
+    <div className="flex items-center justify-center md:justify-start space-x-6 mt-4">
+      {socialLinks.map((social, index) => (
+        <a
+          key={index}
+          href={social.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={social.label}
+          className="text-slate-300 hover:text-blue-400 transform hover:scale-110 transition-all duration-300 text-xl"
+        >
+          {social.icon}
+        </a>
+      ))}
     </div>
   );
 }
