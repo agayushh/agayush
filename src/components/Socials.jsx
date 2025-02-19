@@ -8,27 +8,27 @@ import { FaHashnode } from "react-icons/fa6";
 export default function Socials() {
   const socialLinks = [
     {
-      icon: <BsTwitterX />,
+      icon: BsTwitterX,
       url: "https://x.com/agayushh",
       label: "Twitter Profile",
     },
     {
-      icon: <FaDiscord />,
+      icon: FaDiscord,
       url: "",
       label: "Discord Profile",
     },
     {
-      icon: <FaLinkedinIn />,
+      icon: FaLinkedinIn,
       url: "https://www.linkedin.com/in/-ayushgoyal/",
       label: "LinkedIn Profile",
     },
     {
-      icon: <FaGithub />,
+      icon: FaGithub,
       url: "https://github.com/agayushh",
       label: "GitHub Profile",
     },
     {
-      icon: <FaHashnode />,
+      icon: FaHashnode,
       url: "https://hashnode.com/@ayushgoyal28",
       label: "Hashnode Blog",
     },
@@ -45,7 +45,7 @@ export default function Socials() {
           aria-label={social.label}
           className="text-slate-300 hover:text-blue-400 transform hover:scale-110 transition-all duration-300 text-xl"
         >
-          {social.icon}
+          <social.icon className="text-xl md:text-2xl" />
         </a>
       ))}
     </div>

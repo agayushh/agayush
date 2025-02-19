@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeItem, setActiveItem] = useState('Home');
+  const [activeItem, setActiveItem] = useState("Home");
 
   const navBarItems = [
     { name: "Home", path: "/" },
     { name: "Experience", path: "/" },
     { name: "Events", path: "/" },
-    { name: "Contacts", path: "/" }
+    { name: "Contacts", path: "/" },
   ];
 
   return (
@@ -26,16 +26,22 @@ const Navbar = () => {
                           hover:scale-105 active:scale-95`}
               >
                 {/* Gradient Text */}
-                <span className={`relative z-10 text-lg
-                              ${activeItem === item.name 
-                                ? 'text-blue-400' 
-                                : 'text-blue-400'}`}>
+                <span
+                  className={`relative z-10 text-lg
+                              ${
+                                activeItem === item.name
+                                  ? "text-blue-400"
+                                  : "text-blue-400"
+                              }`}
+                >
                   {item.name}
                 </span>
-                
+
                 {/* Animated underline */}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-400
-                               transition-all duration-300 group-hover:w-full" />
+                <span
+                  className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-400
+                               transition-all duration-300 group-hover:w-full"
+                />
               </button>
             ))}
           </div>
@@ -43,12 +49,15 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         <div className="md:hidden flex justify-between items-center h-16">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-400 
-                         text-xl font-semibold">
+          <span
+            className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-400 
+                         text-xl font-semibold"
+          >
             Menu
           </span>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            name="ham"
             className="text-gray-200 hover:text-white transition-colors"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -68,9 +77,11 @@ const Navbar = () => {
                   setIsMenuOpen(false);
                 }}
                 className={`w-full text-center py-2 px-4 transition-all duration-300
-                          ${activeItem === item.name 
-                            ? 'text-white bg-gradient-to-r from-blue-500/20 to-purple-400/20' 
-                            : 'text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-400'}`}
+                          ${
+                            activeItem === item.name
+                              ? "text-white bg-gradient-to-r from-blue-500/20 to-purple-400/20"
+                              : "text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-400"
+                          }`}
               >
                 {item.name}
               </button>

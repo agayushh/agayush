@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const About = ({ profileImage }) => {
   const [imageError, setImageError] = useState(false);
-  
+
   // Fallback to placeholder if image fails to load or no image provided
   const handleImageError = () => {
     setImageError(true);
@@ -17,7 +17,7 @@ const About = ({ profileImage }) => {
         <img
           src={imageSrc}
           alt="Profile Banner"
-          className="w-full h-full object-cover rounded-lg bg-gray-100 "
+          className="w-full h-full object-cover bg-gray-100 "
           onError={handleImageError}
         />
       </div>
