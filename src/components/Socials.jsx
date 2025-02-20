@@ -14,7 +14,7 @@ export default function Socials() {
     },
     {
       icon: FaDiscord,
-      url: "",
+      url: "http://discordapp.com/users/1029240168051388456",
       label: "Discord Profile",
     },
     {
