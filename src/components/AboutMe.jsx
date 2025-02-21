@@ -19,10 +19,11 @@ export default function AboutMe() {
           {/* Text Content Column */}
           <div className="md:col-span-3 space-y-6">
             <p className="text-lg leading-relaxed text-gray-300 relative pl-6 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-blue-500/50 before:to-purple-500/50 before:rounded-full">
-              I'm a passionate full stack developer with a deep love for
-              building elegant solutions to complex problems. With expertise in
-              modern web technologies and a commitment to clean, maintainable
-              code, I strive to create exceptional digital experiences.
+              You found me. Now buckle up because this ain't your usual “Hello,
+              I’m a developer” intro. I write code that works, scales, and
+              doesn’t break under pressure. Frontend, backend, databases—I make
+              them talk seamlessly. No fluff, no unnecessary abstractions, just
+              clean execution.
             </p>
 
             <div className="space-y-4">
@@ -50,12 +51,14 @@ export default function AboutMe() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-white group-hover:text-blue-300 transition-colors duration-200">
-                        Technical Expertise
+                        Technical Expertise & Precision
                       </h4>
                       <p className="text-gray-400 mt-1">
-                        Proficient in modern frontend and backend technologies,
-                        with a focus on creating performant, scalable
-                        applications.
+                        I know how to write efficient, scalable, and
+                        maintainable code across the full stack. From React &
+                        TypeScript on the frontend to Node.js, PostgreSQL, and
+                        Prisma on the backend, you ensure everything runs
+                        smoothly.
                       </p>
                     </div>
                   </div>
