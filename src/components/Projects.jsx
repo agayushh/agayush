@@ -6,7 +6,7 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Project Name",
+      title: "Text to sql query",
       description: "Replace with your project description. This should highlight the purpose, features, and technologies used.",
       period: "Jan 2023 - Mar 2023",
       link: "https://github.com/yourusername/project",

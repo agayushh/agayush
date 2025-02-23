@@ -9,14 +9,14 @@ export default function Experience() {
       company: "DataWaves lab",
       role: "Full Stack Developer",
       period: "Jun 2024 - Aug 2024",
-      description: "",
-      technologies: ["React", "Node.js", "GraphQL"],
+      description: "My work at Datawave Labs involved developing and integrating various systems and tools to enhance the platform's functionality and user experience. I focused on authentication, cloud integration, infrastructure automation, real-time notifications, client and server development, and DevOps practices.",
+      technologies: ["React", "GraphQL", "Python", "GenAI"],
       logo: null, // You can add your own logo here
       color: "blue"
     },
     {
       id: 2,
-      company: "Previous Company",
+      company: "De",
       role: "Previous Role",
       period: "Mar 2020 - Dec 2021",
       description: "Replace with your role description and achievements.",
