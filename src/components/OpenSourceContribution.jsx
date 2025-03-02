@@ -6,32 +6,29 @@ export default function OpenSourceContributions() {
   const contributions = [
     {
       id: 1,
-      project: "Open Source Project Name",
-      description:
-        "Replace with your contribution description. This could include what features you added, bugs you fixed, or how your work improved the project.",
-      date: "May 2023",
-      link: "https://github.com/project/repository/pull/123",
-      type: "Feature",
+      project: "The Cyber Hub",
+      description: "Fixed a few Bugs",
+      date: "Oct 2024",
+      link: "https://github.com/th3cyb3rhub/TheCyberHUB/pull/920",
+      type: "Bug Fix",
       color: "blue",
     },
     {
       id: 2,
-      project: "Another Open Source Project",
-      description:
-        "Replace with your contribution description. This could include what features you added, bugs you fixed, or how your work improved the project.",
-      date: "February 2023",
-      link: "https://github.com/another-project/repository/pull/456",
+      project: "Job Sewa",
+      description: "Fixed a few UI changes",
+      date: "Oct 2024",
+      link: "https://github.com/Devmangrani/JobSewa/pull/105",
       type: "Bug Fix",
       color: "purple",
     },
     {
       id: 3,
-      project: "Community Library",
-      description:
-        "Replace with your contribution description. This could include what features you added, bugs you fixed, or how your work improved the project.",
-      date: "October 2022",
-      link: "https://github.com/library/repository/pull/789",
-      type: "Documentation",
+      project: "OMI",
+      description: "Fixed a UI bug",
+      date: "Feb 2025",
+      link: "https://github.com/BasedHardware/omi/pull/1927",
+      type: "Bug Fix",
       color: "green",
     },
   ];
