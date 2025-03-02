@@ -16,11 +16,11 @@ export default function Experience() {
     },
     {
       id: 2,
-      company: "De",
-      role: "Previous Role",
-      period: "Mar 2020 - Dec 2021",
-      description: "Replace with your role description and achievements.",
-      technologies: ["TypeScript", "Express", "MongoDB"],
+      company: "Deviators Club",
+      role: "Event Management Lead, Web Dev Co-Lead",
+      period: "Feb 2024 - March 2025",
+      description: "Managing all the club events coordinating with all other members of the club and giving my valuable insights for web related stuff",
+      technologies: ["Github", "Docker", "AWS"],
       logo: null, // You can add your own logo here
       color: "purple"
     }
