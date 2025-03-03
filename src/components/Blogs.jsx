@@ -15,28 +15,28 @@ export default function Blogs() {
       slug: "how-i-built-portfolio-website-react-tailwind",
       color: "blue"
     },
-    {
-      id: 2,
-      title: "Understanding the JavaScript Event Loop",
-      excerpt: "A deep dive into how the JavaScript event loop works, with practical examples and visualizations to help developers understand this complex concept.",
-      date: "March 2, 2023",
-      readTime: "12 min read",
-      tags: ["JavaScript", "Web Development", "Programming"],
-      image: null, // You can add your own blog cover image here
-      slug: "understanding-javascript-event-loop",
-      color: "purple"
-    },
-    {
-      id: 3,
-      title: "My Journey into Open Source: First Contributions",
-      excerpt: "I detail my experience making my first open source contributions, including tips for newcomers and lessons I learned along the way.",
-      date: "January 18, 2023",
-      readTime: "6 min read",
-      tags: ["Open Source", "GitHub", "Community"],
-      image: null, // You can add your own blog cover image here
-      slug: "journey-into-open-source-first-contributions",
-      color: "green"
-    }
+    // {
+    //   id: 2,
+    //   title: "Understanding the JavaScript Event Loop",
+    //   excerpt: "A deep dive into how the JavaScript event loop works, with practical examples and visualizations to help developers understand this complex concept.",
+    //   date: "March 2, 2023",
+    //   readTime: "12 min read",
+    //   tags: ["JavaScript", "Web Development", "Programming"],
+    //   image: null, // You can add your own blog cover image here
+    //   slug: "understanding-javascript-event-loop",
+    //   color: "purple"
+    // },
+    // {
+    //   id: 3,
+    //   title: "My Journey into Open Source: First Contributions",
+    //   excerpt: "I detail my experience making my first open source contributions, including tips for newcomers and lessons I learned along the way.",
+    //   date: "January 18, 2023",
+    //   readTime: "6 min read",
+    //   tags: ["Open Source", "GitHub", "Community"],
+    //   image: null, // You can add your own blog cover image here
+    //   slug: "journey-into-open-source-first-contributions",
+    //   color: "green"
+    // }
   ];
 
   return (
@@ -131,7 +131,8 @@ export default function Blogs() {
                 
                 {/* Read More Link */}
                 <a
-                  href={`/blog/${post.slug}`}
+                  href={`https://agayush.hashnode.dev/handling-async-functions-in-reacts-useeffect-hook`}
+                  target='_blank'
                   className={`inline-flex items-center transition-all duration-200
                               ${post.color === 'purple' ? 'text-purple-400 hover:text-purple-300' : 
                                 post.color === 'green' ? 'text-emerald-400 hover:text-emerald-300' :
@@ -150,7 +151,8 @@ export default function Blogs() {
         {/* View All Posts Link */}
         <div className="mt-12 text-center">
           <a
-            href="/blog"
+            href="https://hashnode.com/@ayushgoyal28"
+            target='_blank'
             className="inline-flex items-center px-6 py-3 rounded-lg text-base font-medium
                       bg-gradient-to-r from-blue-600/20 to-purple-600/20 hover:from-blue-600/30 hover:to-purple-600/30
                       text-blue-300 border border-blue-700/30 hover:border-blue-700/50 transition-all duration-300"
