@@ -19,8 +19,8 @@ export default function Events() {
     },
     {
       id: 2,
-      title: "Youth Day x Univerity Ideathon",
-      eventName: "Idea Presentation",
+      title: "Youth Day Ideathon",
+      eventName: "University",
       description:
         "I was thrilled to be felicitated by the University on the occasion of Youth Day, alongside my team, for winning the University Ideathon. And got an privilege to meet honourable cheif minister",
       date: "January 12th, 2025",
@@ -32,7 +32,7 @@ export default function Events() {
     },
     {
       id: 3,
-      title: "Hackathon Participant",
+      title: "Hackathon Participation",
       eventName: "Hack KRMU",
       description:
         "Competed in a 72-hour hackathon, building am ai based web application to enhance travelling and tourism. Our team won the track prize for being the best project in the domain of AIML.",
@@ -45,8 +45,8 @@ export default function Events() {
     },
     {
       id: 4,
-      title: "Debug Decrypt",
-      eventName: "",
+      title: "Event organizer",
+      eventName: "Debug Decrypt",
       description:
         "We as a club organized this tech event during our college Tech fest which helped students to experience something new",
       location: "Dronacharya College of Engineering, Haryana",
