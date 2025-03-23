@@ -10,6 +10,7 @@ import OpenSourceContributions from "./components/OpenSourceContribution";
 import Blogs from "./components/Blogs";
 import Events from "./components/Events";
 import Contact from "./components/Contact";
+import './App.css';
 
 function App() {
   return (

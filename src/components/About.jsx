@@ -27,7 +27,7 @@ const About = ({ profileImage }) => {
   };
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full" id="home">
       {/* Banner Image Container */}
       <div className="relative w-full h-48 sm:h-72 md:h-80 lg:h-96">
         <img

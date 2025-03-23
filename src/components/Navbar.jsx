@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeItem, setActiveItem] = useState("Home");
 
   const navBarItems = [
-    { name: "Home", path: "/" },
-    { name: "Experience", path: "/" },
-    { name: "Events", path: "/" },
-    { name: "Contacts", path: "/" },
+    { name: "Home", path: "/"  , id: "home"},
+    { name: "Experience", path: "/", id: "experience" },
+    { name: "Events", path: "/" , id: "events"},
+    { name: "Contacts", path: "/" , id: "contacts"},
   ];
 
   return (
@@ -19,7 +18,9 @@ const Navbar = () => {
         <div className="hidden md:flex justify-center h-16 items-center">
           <div className="flex gap-x-12 lg:gap-x-20">
             {navBarItems.map((item) => (
-              <button
+              <a 
+
+                href={"/#" + item.id}
                 key={item.name}
                 onClick={() => setActiveItem(item.name)}
                 className={`group relative px-2 py-1 transition-all duration-300 ease-in-out
@@ -42,7 +43,7 @@ const Navbar = () => {
                   className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-400
                                transition-all duration-300 group-hover:w-full"
                 />
-              </button>
+              </a>
             ))}
           </div>
         </div>
@@ -70,7 +71,8 @@ const Navbar = () => {
         <div className="md:hidden absolute top-16 left-0 right-0 bg-black/90 backdrop-blur-sm">
           <div className="flex flex-col items-center py-4 space-y-4">
             {navBarItems.map((item) => (
-              <button
+              <a
+                href={"/#" + item.id}
                 key={item.name}
                 onClick={() => {
                   setActiveItem(item.name);
@@ -84,7 +86,7 @@ const Navbar = () => {
                           }`}
               >
                 {item.name}
-              </button>
+              </a>
             ))}
           </div>
         </div>

@@ -69,7 +69,7 @@ export default function Events() {
   };
 
   return (
-    <div className="text-gray-200 py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+    <div className="text-gray-200 py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto" id="events">
       <div className="max-w-5xl mx-auto">
         {/* Section Title */}
         <div className="flex items-center space-x-3 mb-12">
